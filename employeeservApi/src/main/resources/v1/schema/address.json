@@ -1,0 +1,55 @@
+{
+  "title": "Employee Address",
+  "description": "Employee address object",
+  "type": "object",
+  "properties": {
+    "addressId": {
+      "description": "address id",
+      "type": "integer"
+    },
+    "line1": {
+      "description": "line1",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "line2": {
+      "description": "line2",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "city": {
+      "description": "city",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "state": {
+      "description": "state",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "country": {
+      "description": "country",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "zip_code": {
+      "description": "zip code",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "line1",
+    "city",
+    "state",
+    "country",
+    "zip_code"
+  ]
+}
